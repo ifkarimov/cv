@@ -1,0 +1,155 @@
+\documentclass[a4paper,11pt]{article}
+
+% Подключение пакетов
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[english, russian]{babel}
+
+% Поддержка Unicode
+\input{glyphtounicode}
+
+% Настройка гиперссылок
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+
+% Настройка полей
+\usepackage[
+    left=1.27cm,
+    right=1.27cm,
+    top=1.27cm,
+    bottom=1.27cm
+]{geometry}
+
+% Настройка оформления страницы
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Оформление заголовков
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Поддержка распознавания PDF
+\pdfgentounicode=1
+
+% Пользовательские команды
+\newcommand{\resumeSubheading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small #3 & \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% \newcommand{\resumeItem}[1]{
+%   \item\small{
+%     {#1 \vspace{-2pt}}
+%   }
+% }
+
+% \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+% \newcommand{\resumeItemListStart}{\begin{itemize}}
+% \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+
+
+% Резюме
+\begin{document}
+
+%─────────────────────────────
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{https://t.me/madeeesta}{\Large Каримов Ирек}} & Email: \href{mailto:ifkarimov@inbox.ru}{ifkarimov@inbox.ru}\\
+%   \href{https://t.me/karimovif}{t.me/karimovif} & GitHub: \href{https://github.com/ifkarimov}{github.com/ifkarimov}\\
+% \end{tabular*}
+%─────────────────────────────
+
+%─────────────────────────────
+\begin{center}
+    \textbf{\Huge \scshape Каримов Ирек} \\ \vspace{1pt}
+    % \small +7 (***) ***-**-** $|$ 
+    \href{https://t.me/karimovif}{t.me/karimovif} $|$
+    \href{mailto:ifkarimov@inbox.ru}{ifkarimov@inbox.ru} $|$ 
+    \href{https://github.com/ifkarimov}{github.com/ifkarimov}
+\end{center}
+%─────────────────────────────
+
+%─────────────────────────────
+% \section{О себе}
+% 
+%─────────────────────────────
+
+%─────────────────────────────
+\section{Образование}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {НИУ ВШЭ}{2025 -- н.в.}
+      {Бакалавриат <<Программная инженерия>>}
+    \resumeSubheading
+      {Лицей имени Н. И. Лобачевского}{2019 -- 2025}
+      {Казанский федеральный университет}
+  \resumeSubHeadingListEnd
+%─────────────────────────────
+
+%─────────────────────────────
+\section{Дополнительное образование}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Анализ данных на Python}{н.в.}
+      {НИУ ВШЭ, Научно-исследовательский семинар}
+    \resumeSubheading
+      {Нейросетевые технологии}{2025 -- 2026}
+      {НИУ ВШЭ, Научно-исследовательский семинар}
+    \resumeSubheading
+      {АНО <<Одарённый ребёнок>>}{2018 -- 2023}
+      {Олимпиадная математика}
+  \resumeSubHeadingListEnd
+%─────────────────────────────
+
+%─────────────────────────────
+\section{Достижения}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Всероссийская олимпиада школьников по математике}{2025}
+      {Региональный этап, призёр}
+    \resumeSubheading
+      {Олимпиада школьников имени Верченко по математике}{2025}
+      {Заключительный этап, призёр}
+    \resumeSubHeadingListEnd
+%─────────────────────────────
+
+%─────────────────────────────
+% \section{Проекты}
+%   \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%       {\textbf{}}{}
+%   \resumeSubHeadingListEnd
+%─────────────────────────────
+
+%─────────────────────────────
+\section{Навыки}
+\begin{itemize}[itemsep=2pt, topsep=2pt]
+    \item \textbf{Языки программирования:} Python, C++, C, Assembly
+    \item \textbf{Анализ данных:} NumPy, Pandas, Matplotlib, Seaborn
+    \item \textbf{Машинное обучение:} Scikit-learn, CatBoost (базово)
+    \item \textbf{Разработка:} Git, GitHub, GitLab, Docker
+    \item \textbf{Операционные системы:} macOS, Linux
+    \item \textbf{Языки:} Русский (родной), Английский (B2-C1)
+\end{itemize}
+%─────────────────────────────
+
+\end{document}
